@@ -16,11 +16,7 @@ function App() {
     // setCounter(counter=>counter+1)
   }
  const removeValue=() =>{
-  counter=counter-1
-  setCounter(counter)
-  if(setCounter<0){
-    setCounter.preventDefault(-1);
-  }
+  setCounter(prevCounter=>(prevCounter>0 ? prevCounter -1 : 0 ))
  
  }
   return (
