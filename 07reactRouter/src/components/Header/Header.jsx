@@ -35,12 +35,10 @@ export default function Header() {
           <div
             id="mobile-menu-toggle"
             className="inline cursor-pointer text-2xl lg:hidden"
-            onClick={toggleMenu} // Toggle menu visibility on click
+            onClick={toggleMenu}
           >
-            &#9776; {/* Hamburger Icon */}
+            &#9776;
           </div>
-
-          {/* Mobile Menu */}
           <div
             id="mobile-menu-2"
             className={`${
